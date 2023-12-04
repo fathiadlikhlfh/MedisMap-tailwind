@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <header class="">
+      <nav class="flex justify-between items-center w-[92%] mx-auto my-20 px-6">
+        <div>
+          <h1 class="text-teal-600 font-bold text-4xl"><a href="">MedisMap</a></h1>
+        </div>
+        <div class="nav-links mt-10 sm:mt-0 sm:static absolute sm:min-h-fit min-h-[12vh] top-[-100%] sm:w-auto w-full flex items-center sm:py-3">
+          <ul class="flex sm:flex-row flex-col sm:items-center sm:gap-[4vw] gap-6">
+            <li>
+              <a href="#about" class="text-teal-600 font-semibold hover:text-teal-400">Tentang</a>
+            </li>
+            <li>
+              <a href="#main" class="text-teal-600 font-semibold hover:text-teal-400">Fitur</a>
+            </li>
+            <li>
+              <a href="#thi" class="text-teal-600 font-semibold hover:text-teal-400">Profil</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="gap-1 sm:gap-3 flex items-center flex-row">
+            <button class="rounded-full w-12 sm:w-20 text-slate-400 text-xs font-normal sm:hover:font-semibold p-1 sm:p-2 hover:border-teal-600 hover:text-teal-600 border-2">Login</button>
+            <button class="bg-teal-600 rounded-full w-14 sm:w-28 text-white text-xs font-medium p-1 sm:p-2 hover:bg-teal-400">Sign In</button>
+          </div>
+          <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer sm:hidden"></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Search Fixed -->
+    <div id="search" class="container mx-auto my-20 pt-36 px-6 sm:pt-3 sm:px-6">
+      <div class="border rounded-xl shadow-lg p-14">
+        <h1 class="text-center font-bold text-xl text-teal-600 sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl">
+          Find the Nearest Health Facility <br />
+          with Detailed Information
+        </h1>
+        <!-- Bagian search -->
+        <div class="text-center mt-6">
+          <form action="#" method="get" class="flex items-center justify-center">
+            <input type="text" placeholder="Cari Faskes . . ." class="border p-2 rounded-xl" />
+            <button type="submit" class="bg-teal-700 text-white p-2 rounded-xl ml-2 hover:bg-teal-400">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- Bagian Penutup search -->
+      </div>
+    </div>
+    <!-- Search Fixed -->
+
+    <!-- Main Content -->
+    <section id="main">
+      <div class="container mx-auto my-5 px-6">
+        <div class="w-full py-14 pl-5">
+          <div>
+            <h2 class="font-bold text-3xl text-teal-600">Fitur MedisMap</h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 sm:w-1/2 md:w-1/3">
+            <div class="bg-white rounded-xl overflow-hidden mb-10 shadow-lg">
+              <a href="">
+                <img class="hover:brightness-50" src="../dist/img/rumahSakit.jpg" alt="" />
+              </a>
+              <div class="py-5 px-3">
+                <h4 class="mb-3 text-lg font-bold text-teal-600">Rumah Sakit</h4>
+                <p class="mb-3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, necessitatibus?</p>
+                <a class="hover:text-teal-600" href="#">Lihat Rumah Sakit</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 md:w-1/3">
+            <div class="bg-white rounded-xl overflow-hidden mb-10 shadow-lg">
+              <a href="">
+                <img class="hover:brightness-50" src="../dist/img/klinik.jpg" alt="" />
+              </a>
+              <div class="py-5 px-3">
+                <h4 class="mb-3 text-lg font-bold text-teal-600">Klinik</h4>
+                <p class="mb-3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, necessitatibus?</p>
+                <a class="hover:text-teal-600" href="#">Lihat Klinik</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 md:w-1/3">
+            <div class="bg-white rounded-xl overflow-hidden mb-10 shadow-lg">
+              <a href="">
+                <img class="hover:brightness-50" src="../dist/img/apotik.jpg" alt="" />
+              </a>
+              <div class="py-5 px-3">
+                <h4 class="mb-3 text-lg font-bold text-teal-600">Apotik</h4>
+                <p class="mb-3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, necessitatibus?</p>
+                <a class="hover:text-teal-600" href="#">Lihat Apotik</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main COntent -->
+
+    <!-- About -->
+    <section id="about" class="pt-16 pb-3">
+      <div class="container mx-auto px-6">
+        <h4 class="font-bold text-2xl text-utama mb-5 text-teal-600 text-center">Tentang MedisMap</h4>
+        <div class="flex flex-wrap border rounded-xl shadow-lg px-5 py-10">
+          <div class="w-full px-4 mb-10 lg:w-1/2 text-teal-600">
+            <p class="font-medium text-base text-abu max-w-xl text-left lg:text-lg lg:pt-1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis qui delectus nostrum nulla aliquam earum, animi ipsa, quaerat facilis iste ullam pariatur voluptatibus officia deleniti adipisci optio nisi? Aut excepturi
+              similique officia eveniet pariatur.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 lg:pt-1 text-teal-600">
+            <p class="font-medium text-base text-abu mb-6 text-left max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates labore neque non nihil nisi.</p>
+            <div class="flex items-center">
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/fathikhlfh/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-teal-300 hover:bg-teal-300 hover:text-white"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50" class="fill-current">
+                  <path
+                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- End instagram -->
+
+              <!-- linkedin -->
+              <a
+                href="https://www.linkedin.com/in/fathiadlikhalafah/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-teal-300 hover:bg-teal-300 hover:text-white"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50" class="fill-current">
+                  <path
+                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- End Linkedin -->
+
+              <!-- Github -->
+              <a href="https://github.com/fathiadlikhlfh" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-teal-300 hover:bg-teal-300 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50" class="fill-current">
+                  <path
+                    d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- End Github -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Profile -->
+    <section id="thi" class="pt-3 pb-10">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2 text-teal-600">
+            <h1 class="text-xs font-semibold px-20 text-utama sm:text-sm md:text-base lg:text-lg xl:text-xl">
+              Saya,
+              <span class="text-lg font-bold md:text-2xl lg:text-3xl xl:text-4xl">Fathi Adli Khalafah</span>
+              <span class="block text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">biasa dipanggil</span>
+              <span class="block font-bold text-utama md:text-2xl text-xl lg:text-3xl xl:text-4xl">Thi</span>
+            </h1>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-10 lg:mt-9 lg:right-0">
+              <img src="../dist/img/thi-removebg.png" alt="Fathi Adli Khalafah" class="max-w-full mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Profile -->
+
+    <footer>
+      <div class="container bg-teal-600 p-7 max-w-full mx-auto">
+        <div class="">
+          <ul class="flex justify-center gap-4">
+            <li class="">
+              <a href="#">
+                <ion-icon class="w-5 h-5 text-white" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="w-5 h-5 text-white" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="w-5 h-5 text-white" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center items-center text-white flex-col">
+          <h4 class="text-sm font-semibold">@MedisMap, 2023</h4>
+          <span class="text-xs font-thin">All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="../dist/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
